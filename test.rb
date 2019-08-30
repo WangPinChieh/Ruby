@@ -28,3 +28,14 @@ hsh = {"jay" => 0, "yvonne" => 1}
 hsh.each do |key, value|
     print key, " is ", value, "\n"
 end
+
+if defined? foo
+    print "True"
+else
+    print "False"
+end
+length = 10
+(0..length).each do |n|
+    print "\nNumber is ", n, "\n"
+end
+
