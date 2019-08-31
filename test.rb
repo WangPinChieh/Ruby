@@ -100,3 +100,13 @@ while counter > 0 do
 end
 
 
+until counter > 10 do
+    print counter, "\n"
+    counter += 1
+end
+
+
+for i in 0..5
+    puts i
+end
+
