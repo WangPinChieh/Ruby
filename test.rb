@@ -2,12 +2,23 @@ $g_variable = 200
 
 class Vehicle
     @@no_of_wheels = 0
+    @@classVariable = "Class Variable"
     def initialize(numOfWheels)
         @@no_of_wheels = numOfWheels
+        @instanceVariable = "Instance Variable"
     end
     def display_num_of_wheels()
         puts "num of wheels: #@@no_of_wheels"
     end
+    def hello
+        puts "hello From Hello"
+    end
+    def showInstanceVariable
+        puts "Instance Variable : #@instanceVariable"
+    end
+    def showClassVariable
+        puts "Class Variable : #@@classVariable"
+    end 
 end
 
 
@@ -39,3 +50,8 @@ length = 10
     print "\nNumber is ", n, "\n"
 end
 
+v.hello
+
+v.showInstanceVariable
+
+v.showClassVariable
