@@ -91,3 +91,12 @@ when 7..12
 else
     puts 'else'
 end
+
+
+counter = 10
+while counter > 0 do
+    print counter, "\n"
+    counter -= 1
+end
+
+
