@@ -3,6 +3,7 @@ $g_variable = 200
 class Vehicle
     @@no_of_wheels = 0
     @@classVariable = "Class Variable"
+    ConstantVariable = "Constant Variable" #Constants begin with an uppercase letter
     def initialize(numOfWheels)
         @@no_of_wheels = numOfWheels
         @instanceVariable = "Instance Variable"
@@ -19,6 +20,9 @@ class Vehicle
     def showClassVariable
         puts "Class Variable : #@@classVariable"
     end 
+    def showConstantVariable
+        puts "Constant Variable : #{ConstantVariable}"
+    end
 end
 
 
@@ -55,3 +59,35 @@ v.hello
 v.showInstanceVariable
 
 v.showClassVariable
+
+v.showConstantVariable
+
+puts Vehicle::ConstantVariable
+
+=begin
+multiline comment
+multiline comment
+=end
+
+print "print if true\n" if true
+print "print if false\n" if false
+
+unless false then
+    print "123\n"
+else
+    print "456\n"
+end
+
+
+
+$age = 5
+case $age
+when 0..2
+    puts "0..2"
+when 3..6
+    puts "3..6"
+when 7..12
+    puts "7..12"
+else
+    puts 'else'
+end
