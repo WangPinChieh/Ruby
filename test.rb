@@ -110,3 +110,42 @@ for i in 0..5
     puts i
 end
 
+def myFunction
+    puts "myFunction is called"
+end
+
+def myFunction2(num)
+    puts "myFunction2 is called #{num}"
+end
+
+def myFunction3(num = 20)
+    puts "myFunction3 is called #{num}"
+end
+
+def myFunction4
+    j = 50
+    q = 80
+    k = 100
+
+    return j, q, k
+end
+
+
+myFunction
+myFunction2(100)
+myFunction2 100
+myFunction3
+result = myFunction4
+puts result[0]
+puts result[1]
+puts result
+
+
+
+def funcWithListOfParams(*args)
+    for i in 0..args.length-1 do 
+        puts "arg #{i} is #{args[i]}"
+    end
+end
+
+funcWithListOfParams(1, "jay", 200)
